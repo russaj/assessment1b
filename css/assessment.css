@@ -1,0 +1,48 @@
+body{
+background-image: url("../images/back-ground.jpeg");
+}
+
+h1 {
+	text-align: center;
+}
+
+img{
+   width: 120px; 
+   margin-bottom: 15px; 
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+div{
+   padding: 30px; 
+   margin:5px;
+   display: grid;
+   text-align: center;
+   grid-template-columns: 1fr 1fr;
+}
+
+#mystuff:nth-child(odd){
+  align-content: left;
+}
+
+#mystuff:nth-child(even){
+  align-content: right;
+}
+
+@media screen and (min-width: 850px){
+
+div {
+   padding: 30px; 
+   margin:5px;
+   display: grid;
+   text-align: center;
+   grid-template-columns: 1fr 1fr 1fr;
+	}
+div:nth-child(odd){
+}
+
+div:nth-child(even){
+  border-style: solid;
+}
+}
